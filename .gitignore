@@ -1,3 +1,4 @@
+#Github LaTeX .gitignore
 *.acn
 *.acr
 *.alg
@@ -30,3 +31,21 @@
 *.vrb
 *.xdy
 *.tdo
+
+#Github CMake .gitignore
+CMakeCache.txt
+CMakeFiles
+Makefile
+cmake_install.cmake
+install_manifest.txt
+
+#Emacs backups
+*~
+\#*\#
+.emacs.desktop
+
+#UseLatex documentation
+UseLATEX/doc
+
+# build directory
+build

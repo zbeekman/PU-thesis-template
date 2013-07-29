@@ -1,3 +1,4 @@
 [submodule "UseLATEX"]
 	path = UseLATEX
 	url = git://github.com/kmorel/UseLATEX.git
+	ignore = dirty
