@@ -61,7 +61,8 @@ set ( THESIS_INCLUDES
   ch-pastwork/topic1.tex
   ch-pastwork/topic2.tex
   ch-usage/chapter-usage.tex
-  ch-usage/usage_options.tex )
+  ch-usage/usage_options.tex
+  ch-building/chapter-building.tex)
 
 set ( THESIS_IMAGE_DIRS
   ch-pastwork/figures )
