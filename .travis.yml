@@ -1,0 +1,11 @@
+language: c
+
+install:
+    - echo "starting texlive install at $(date)"
+    - sudo apt-get install texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended
+    - sudo apt-get install chktex
+    - echo "finished texlive install at $(date)"
+    - mkdir build
+
+script:
+    - cd build && cmake ../ && make
