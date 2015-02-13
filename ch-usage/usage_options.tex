@@ -8,14 +8,14 @@ In this section, we describe the options you can set when using this thesis clas
 \begin{longtable}{p{0.3\linewidth} p{0.6\linewidth}}
 
   % First page heading
-  \caption[Options Provided by the PUthesis Class]{List of options for the puthesis document class and template} \label{tab:usage:options}\\
+  \caption[Options Provided by the PUthesis Class]{List of options for the puthesis document class and template\label{tab:usage:options}}\\
   \toprule
   \textbf{Option} & \textbf{Description} \\
   \midrule
   \endfirsthead
 
   % Future page heading
-  \caption[]{(continued)}\\
+  \caption[]{(continued)}\\ % chktex 36
   \toprule
   \textbf{Option} & \textbf{Description} \\
   \midrule
@@ -23,7 +23,7 @@ In this section, we describe the options you can set when using this thesis clas
 
   % Page footer
   \midrule
-  \multicolumn{2}{r}{(Continued on next page)}\\
+  \multicolumn{2}{r}{(Continued on next page)}\\ % chktex 36
   \endfoot
 
   % Last page footer
@@ -31,11 +31,11 @@ In this section, we describe the options you can set when using this thesis clas
   \endlastfoot
 
   12pt &
-  Specify the font size for body text as a parameter to \texttt{documentclass}. The Mudd Library requirements~\cite{muddthesis2009} state that 12pt is preferred for serif fonts (e.g., Times New Roman) and 10pt for sans-serif fonts (e.g., Arial).
+  Specify the font size for body text as a parameter to \texttt{documentclass}. The Mudd Library requirements~\cite{muddthesis2009} state that 12pt is preferred for serif fonts (e.g.,\ Times New Roman) and 10pt for sans-serif fonts (e.g.,\ Arial).
   \\
 
   letterpaper &
-  If your document is coming out in a4paper, your LaTeX defaults may be wrong. Set this option as a parameter to \texttt{documentclass} to have the correct 8.5"x11" paper size.
+  If your document is coming out in a4paper, your LaTeX defaults may be wrong. Set this option as a parameter to \texttt{documentclass} to have the correct 8.5''x11'' paper size.
   \\
 
   lot &
@@ -56,11 +56,11 @@ In this section, we describe the options you can set when using this thesis clas
   \\
 
   draft &
-  Set this option as a parameter to \texttt{documentclass} to have \LaTeX mark sections of your document that have formatting errors (e.g., overfull hboxes).
+  Set this option as a parameter to \texttt{documentclass} to have \LaTeX mark sections of your document that have formatting errors (e.g.,\ overfull hboxes).
   \\
 
   % the cmidrule here spans both columns but is indented slightly on the left and right.
-  \cmidrule[0.1pt](l{0.5em}r{0.5em}){1-2}
+  \cmidrule[0.1pt](l{0.5em}r{0.5em}){1-2} % chktex 36 chktex 8
 
   \raggedright
   $\backslash newcommand$ $\{\backslash printmode\}\{\}$ &
@@ -76,7 +76,7 @@ In this section, we describe the options you can set when using this thesis clas
   Insert this command after the \texttt{$\backslash begin\{document\}$} command, but before including your chapters to insert the Table of Contents and other front matter.
   \\
 
-  \cmidrule[0.1pt](l{0.5em}r{0.5em}){1-2}
+  \cmidrule[0.1pt](l{0.5em}r{0.5em}){1-2} % chktex 36 chktex 8
 
   $\backslash title$ &
   Set the title of your dissertation. Used on the title page and in the PDF properties.
@@ -97,12 +97,12 @@ In this section, we describe the options you can set when using this thesis clas
   Your adviser's full name. Used on the title page. \\
 
   $\backslash departmentprefix$ &
-  The wording that precedes your department or program name. Used on the title page. The default is ``Department of'', since most people list their department and can leave this out (e.g., Department of Electrical Engineering), however if yours is a program, set $\backslash departmentprefix\{Program in\}$ \\
+  The wording that precedes your department or program name. Used on the title page. The default is ``Department of'', since most people list their department and can leave this out (e.g.,\ Department of Electrical Engineering), however if yours is a program, set $\backslash departmentprefix\{Program in\}$ \\
 
   $\backslash department$ &
   The name of your department or program. Used on the title page. \\
 
-  \cmidrule[0.1pt](l{0.5em}r{0.5em}){1-2}
+  \cmidrule[0.1pt](l{0.5em}r{0.5em}){1-2} % chktex 8 chktex 36
 
   \raggedright
   $\backslash renewcommand$ $\{\backslash maketitlepage\}\{\}$ &
@@ -122,4 +122,4 @@ In this section, we describe the options you can set when using this thesis clas
 
 % need blank space after \bodyspacing
 
-I've seen other people print their dissertations using $\backslash pagestyle\{headings\}$, which places running headings on the top of each page with the chapter number, chapter name, and page number. This documentclass is not currently compatible with this option -- the margins are setup to be correct with page numbers in the footer, placing them 3/4" from the edge of the paper, as required. If you wish to use headings, you will need to adjust the margins accordingly.
+I've seen other people print their dissertations using $\backslash pagestyle\{headings\}$, which places running headings on the top of each page with the chapter number, chapter name, and page number. This documentclass is not currently compatible with this option---the margins are setup to be correct with page numbers in the footer, placing them 3/4'' from the edge of the paper, as required. If you wish to use headings, you will need to adjust the margins accordingly.

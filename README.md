@@ -6,7 +6,7 @@ PU PhD. thesis template
 [![In Progress](https://badge.waffle.io/zbeekman/PU-thesis-template.png?label=In%20Progress&title=In%20Progress)](https://waffle.io/zbeekman/PU-thesis-template)
 [![Needs Review](https://badge.waffle.io/zbeekman/PU-thesis-template.png?label=Needs%20Review&title=Needs%20Review)](https://waffle.io/zbeekman/PU-thesis-template)
 
-[![Build Status](https://travis-ci.org/zbeekman/PU-thesis-template.svg)](https://travis-ci.org/zbeekman/PU-thesis-template)
+[![Travis](https://img.shields.io/travis/zbeekman/PU-thesis-template.svg?style=plastic)](https://travis-ci.org/zbeekman/PU-thesis-template)
 
 This is an update to Jeffery Dwoskin's puthesis class and puthesis
 template, which itself was adapted from the Princeton University
