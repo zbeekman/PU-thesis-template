@@ -18,3 +18,16 @@ script:
     # If lint output is non-empty report an error.
     - test ! -s lint.out
     - (grep -i undefine thesis.log; if [ "$?" -ne "1" ]; then echo "Undefined refrences exist, or error parsing thesis.log" && false; else true; fi)
+
+before_deploy:
+    - mv thesis.pdf PU-thesis-template.pdf
+
+deploy:
+  provider: releases
+  api_key:
+    secure: gqMDOSwHqNbHo1DRkqw16gtJzcmwnyms+B0iuZ0aPLSrNHqV68s/u1tu1/rkZoIo6RMxKmXFvgpT8uJUfdXYyh14K8IeAsA+Yi3001C29KXYkuqeC3DdsJNit6yCnzvdq6/hg2c5sqh1Gvw24qLyUQs215I/5u8ojNEVQdTqCdg=
+  file: PU-thesis-template.pdf
+  skip_cleanup: true
+  on:
+    repo: zbeekman/PU-thesis-template
+    tags: true
